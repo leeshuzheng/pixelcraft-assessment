@@ -1,5 +1,3 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
-
 const theme = {
   colors: {
     black: "#000000",
@@ -25,8 +23,8 @@ const theme = {
     "welcome-queue": "url('/assets/images/parcel-dashboard-bg.png')",
   },
   fontFamily: {
-    alien: ['"Alien Encounters"', "sans-serif"],
-    pixelar: ['"Pixelar Regular"', "sans-serif"],
+    alien: ["var(--font-alien)", "sans-serif"],
+    pixelar: ["var(--font-pixelar)", "sans-serif"],
   },
 };
 

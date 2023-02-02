@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: "Alien Encounters";
-    src: url("/public/fonts/Alien-Encounters-Regular.tff") format("ttf");
-  }
-
-  @font-face {
-    font-family: "Pixelar Regular";
-    src: url("/public/fonts/Pixelar Regular W01 Regular.tff") format("ttf");
-  }
-}
-
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
