@@ -1,7 +1,7 @@
 import Head from "next/head";
-import WelcomeModal from "@/containers/WelcomeModal";
+import ParcelModal from "@/containers/ParcelModal";
 
-export default function Home() {
+const Parcel = () => {
   return (
     <>
       <Head>
@@ -11,11 +11,13 @@ export default function Home() {
       </Head>
       <main>
         {/* background section */}
-        <div className="bg-welcome-queue bg-cover bg-no-repeat min-h-screen">
-          {/* <div className="bg-black opacity-[0.45] absolute h-full w-full"></div> */}
+        <div className="bg-parcel-dashboard bg-cover bg-no-repeat min-h-screen">
+          <div className="bg-black opacity-[0.45] absolute h-full w-full"></div>
         </div>
-        <WelcomeModal />
+        <ParcelModal />
       </main>
     </>
   );
-}
+};
+
+export default Parcel;
