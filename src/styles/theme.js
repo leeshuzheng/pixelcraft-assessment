@@ -5,10 +5,25 @@ const theme = {
     yellow: "#ffd600",
     cyan: "#00b9e1",
     cyan2: "#4adbfb",
+    cyan3: "#02A5C9",
+    cyan4: "#00456C",
+    cyan5: "#33DAFF",
+    cyan6: "#008DCA",
+    cyan7: "#3BCCFF",
     magenta: "#c82ac2",
     magenta2: "#f31ced",
     magenta3: "#ff7bfb",
+    magenta4: "#F643F0",
+    magenta5: "#3D003A",
+    magenta6: "#A712A1",
+    magenta7: "#F934F3",
     purple: "#a065ff",
+    purple2: "#8348FF",
+    purple3: "#9B6CFF",
+    purple4: "#5F2EC8",
+    purple5: "#3D0980",
+    green: "#52BB34",
+    red: "#DF2B25",
   },
   backgroundImage: {
     "parcel-dashboard": "url('/assets/images/parcel-dashboard-bg.png')",
@@ -20,6 +35,10 @@ const theme = {
       "linear-gradient(180deg, rgba(0, 185, 225, 0.5) 17.01%, rgba(0, 185, 225, 0) 96.53%), linear-gradient(180deg, rgba(0, 0, 0, 0.4) 17.01%, rgba(0, 0, 0, 0) 96.53%);",
     "gradient-magenta":
       "linear-gradient(180deg, rgba(200, 42, 194, 0) 0%, rgba(200, 42, 194, 0.45) 93.23%);",
+    "gradient-magenta2":
+      "linear-gradient(180deg, rgba(200, 42, 194, 0.4) 0%, rgba(200, 42, 194, 0.2) 105.15%);",
+    "gradient-magenta3":
+      "linear-gradient(270deg, rgba(200, 42, 194, 0) -15.34%, rgba(200, 42, 194, 0.45) 100%)",
     "gradient-grey":
       "linear-gradient(180deg, rgba(105, 105, 105, 0) 0%, rgba(143, 118, 142, 0.45) 93.23%);",
   },
@@ -29,6 +48,7 @@ const theme = {
   },
   extend: {
     boxShadow: {
+      "xs-magenta": "0px 0px 5px #C82AC2, 0px 0px 5px #C82AC2",
       "sm-magenta": "0px 0px 10px 4px rgba(200, 42, 194, 0.8);",
       "md-magenta": "-4px -4px 8px #C82AC2, 4px 4px 14px #C82AC2;",
     },
