@@ -2,7 +2,7 @@
 
 This front end development assessment was built with [Next.js](https://nextjs.org/) and bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) for ease of setting up.
 
-I understand the team works with [tailwindcss](https://tailwindcss.com/) too, so it was my choice of framework to style my modals. On occasion, it was necessary for me to use [`css-modules`](https://github.com/css-modules/css-modules) to handle component-specific class names.
+I understand the team works with [tailwindcss](https://tailwindcss.com/) too, so it was my choice of framework to style my modals. On occasion, it was necessary for me to use [`css-modules`](https://github.com/css-modules/css-modules) to handle [component-specific styles](https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css).
 
 ## Getting Started
 

@@ -9,12 +9,18 @@ import {
   ReadyToChannelIcon,
   ReadyToEmptyIcon,
 } from "./constants";
+import styles from "./index.module.css";
 import clsx from "clsx";
 
 const ParcelModal: React.FC<ParcelModalProps> = () => {
   return (
     <div className="fixed inset-0 z-10 overflow-y-auto">
-      <div className="flex min-h-full mx-auto items-end justify-center sm:items-center px-6 lg:px-4 py-[100px] max-w-[1240px] w-full cut-out-parent">
+      <div
+        className={clsx(
+          "flex min-h-full mx-auto items-end justify-center sm:items-center px-6 lg:px-4 py-[100px] max-w-[1240px] w-full",
+          styles.parent
+        )}
+      >
         <div className="relative w-full">
           <div
             className={clsx(
@@ -28,7 +34,12 @@ const ParcelModal: React.FC<ParcelModalProps> = () => {
               REALM #18763
             </h1>
           </div>
-          <div className="font-pixelar w-full cut-out top-left border-[3px] border-magenta rounded-[3px]">
+          <div
+            className={clsx(
+              "font-pixelar w-full cut-out top-left border-[3px] border-magenta rounded-[3px]",
+              styles.customShape
+            )}
+          >
             <div className="flex flex-col items-center relative w-full h-full pt-10 lg:pt-8 pb-[66px]">
               <div className="bg-black absolute top-0 left-0 h-full w-full z-[-2]"></div>
               <div className="absolute top-0 left-0 h-full w-full z-[-1] bg-lines-mobile lg:bg-lines bg-no-repeat bg-cover"></div>

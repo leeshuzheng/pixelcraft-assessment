@@ -1,47 +1,119 @@
-.trapezoid2 {
-  width: 352px;
-  height: 49px;
+.topTrapezoid {
+  width: 210px;
+  height: 35px;
+  top: -36px;
+  background-color: rgba(255, 214, 0, 0.4);
+  transform: perspective(4px) rotateX(1deg);
+  position: absolute;
+  border-top: 5px solid #ffd600;
+  border-left: 5px solid #ffd600;
+  border-right: 5px solid #ffd600;
+}
+
+.bottomTrapezoid {
+  width: 282px;
+  height: 35px;
+  bottom: -36px;
   background-color: rgba(0, 185, 225, 0.5);
   transform: perspective(20px) rotateX(-6deg);
   position: absolute;
-  bottom: -52px;
   border-bottom: 5px solid #00b9e1;
   border-left: 5px solid #00b9e1;
   border-right: 5px solid #00b9e1;
 }
 
-.leftBorderBottom {
-  position: absolute;
-  left: 0;
-  width: calc((100% - 395px) / 2);
+/* top borders */
+
+.topBorder {
+  width: calc((100% - 218px) / 2);
   height: 4px;
-  background-color: #00b9e1;
-  bottom: -3px;
+  top: -3px;
+  background-color: #ffd600;
+  position: absolute;
 }
 
-.rightBorderBottom {
-  position: absolute;
-  right: 0;
-  width: calc((100% - 395px) / 2);
-  height: 4px;
-  background-color: #00b9e1;
-  bottom: -3px;
-}
+/* boxes */
 
-.rightBox {
+.box {
   height: 14px;
   width: 14px;
   position: absolute;
+}
+
+.topRightBox {
+  right: -7px;
+  top: -7px;
+  background-color: #ffd600;
+}
+
+.topLeftBox {
+  left: -7px;
+  top: -7px;
+  background-color: #ffd600;
+}
+
+/* bottom elements */
+
+.bottomBorder {
+  position: absolute;
+  height: 4px;
+  bottom: -3px;
+  background-color: #00b9e1;
+  width: calc((100% - 305px) / 2);
+}
+
+.bottomRightBox {
   right: -7px;
   bottom: -7px;
   background-color: #00b9e1;
 }
 
-.leftBox {
-  height: 14px;
-  width: 14px;
-  position: absolute;
+.bottomLeftBox {
   left: -7px;
   bottom: -7px;
   background-color: #00b9e1;
+}
+
+@media screen and (min-width: 576px) {
+  .topTrapezoid {
+    width: 250px;
+    height: 40px;
+    top: -42px;
+  }
+
+  .bottomTrapezoid {
+    width: 286px;
+    height: 40px;
+    bottom: -42px;
+  }
+
+  .topBorder {
+    width: calc((100% - 266px) / 2);
+  }
+
+  .bottomBorder {
+    width: calc((100% - 309px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .topTrapezoid {
+    width: 293px;
+    height: 49px;
+    top: -51px;
+  }
+
+  .bottomTrapezoid {
+    width: 352px;
+    height: 49px;
+    bottom: -52px;
+  }
+
+  .topBorder {
+    width: calc((100% - 317px) / 2);
+  }
+
+  .bottomBorder {
+    width: calc((100% - 395px) / 2);
+  }
 }
