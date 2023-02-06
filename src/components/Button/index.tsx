@@ -7,7 +7,7 @@ const Button = ({ children, variant }: ButtonProps) => {
   return (
     <button
       className={clsx(
-        "relative text-white md:text-[40px] md:h-[64px] md:max-w-[304px] w-full",
+        "relative text-white text-3xl xl:text-[40px] h-[50px] md:h-[64px] md:max-w-[304px] w-full",
         bgStyle[variant]
       )}
       onClick={() => alert("testing click!")}

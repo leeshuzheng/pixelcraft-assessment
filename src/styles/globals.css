@@ -104,6 +104,95 @@ a {
   text-decoration: none;
 }
 
+.cut-out-parent {
+  filter: drop-shadow(-4px -4px 8px #c82ac2) drop-shadow(4px 4px 14px #c82ac2);
+}
+
+.cut-out {
+  clip-path: polygon(
+    0 20px,
+    20px 20px,
+    20px 0,
+    calc(100% - 20px) 0,
+    calc(100% - 20px) 20px,
+    100% 20px,
+    100% calc(100% - 20px),
+    calc(100% - 20px) calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    20px 100%,
+    20px calc(100% - 20px),
+    0 calc(100% - 20px)
+  );
+}
+
+.trapezoid {
+  width: 293px;
+  height: 49px;
+  background-color: rgba(255, 214, 0, 0.4);
+  transform: perspective(4px) rotateX(1deg);
+  position: absolute;
+  top: -51px;
+  border-top: 4px solid #ffd600;
+  border-left: 4px solid #ffd600;
+  border-right: 4px solid #ffd600;
+}
+
+.left-border {
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: calc((100% - 317px) / 2);
+  height: 4px;
+  background-color: #ffd600;
+}
+
+.right-border {
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: calc((100% - 317px) / 2);
+  height: 4px;
+  background-color: #ffd600;
+}
+
+.right-box {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  right: -7px;
+  top: -7px;
+  background-color: #ffd600;
+}
+
+.left-box {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  background-color: #ffd600;
+}
+
+/* .top-left:after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 18px;
+  height: 3px;
+  width: 20px;
+  background-color: #c82ac2;
+}
+
+.top-left:before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 35px;
+  height: 20px;
+  width: 3px;
+  background-color: #c82ac2;
+} */
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

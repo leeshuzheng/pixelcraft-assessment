@@ -29,6 +29,7 @@ const theme = {
     "parcel-dashboard": "url('/assets/images/parcel-dashboard-bg.png')",
     "welcome-queue": "url('/assets/images/welcome-bg.png')",
     lines: "url('/assets/images/Lines.svg')",
+    "lines-mobile": "url('/assets/images/Lines-mobile.png')",
     "gradient-yellow":
       "linear-gradient(179.98deg, rgba(255, 214, 0, 0.4) 2.93%, rgba(255, 214, 0, 0) 43.91%, rgba(255, 214, 0, 0.024) 65.5%), linear-gradient(180deg, rgba(0, 0, 0, 0.45) 27.8%, rgba(0, 0, 0, 0) 73.65%);",
     "gradient-cyan":
