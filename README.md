@@ -4,6 +4,8 @@ This front end development assessment was built with [Next.js](https://nextjs.or
 
 I understand the team works with [tailwindcss](https://tailwindcss.com/) too, so it was my choice of framework to style my modals. On occasion, it was necessary for me to use [`css-modules`](https://github.com/css-modules/css-modules) to handle [component-specific styles](https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css).
 
+I had no business passing props to components, but gave each container component a `definitions.ts` to show how I would set up my projects with Typescript, along with `constants.ts`.
+
 ## Getting Started
 
 Clone this repo and `cd` into the project root. Run `npm install` or `yarn install`, whichever you prefer. Once we have our `node_modules` folder, run the development server:
