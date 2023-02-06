@@ -6,6 +6,11 @@ I understand the team works with [tailwindcss](https://tailwindcss.com/) too, so
 
 I had no business passing props to components, but gave each container component a `definitions.ts` to show how I would set up my projects with Typescript, along with `constants.ts`.
 
+## Notes
+
+- At times it was neccessary to make slight deviations from the figma, as certain font sizes would be too big for buttons in smaller flex containers between 1024px and 1280px browser widths. However I ensured these were minimal.
+- It was a challenge to handle trapezoids and polygons as container shapes. I would have wanted to experiment with using [`border-image-source`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-source) to create borders that were identical to those within the figma design.
+
 ## Getting Started
 
 Clone this repo and `cd` into the project root. Run `npm install` or `yarn install`, whichever you prefer. Once we have our `node_modules` folder, run the development server:
