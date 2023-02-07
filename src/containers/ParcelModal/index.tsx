@@ -41,9 +41,12 @@ const ParcelModal: React.FC<ParcelModalProps> = () => {
             )}
           >
             <div className="flex flex-col items-center relative w-full h-full pt-10 lg:pt-8 pb-[66px]">
+              <div className={styles.topLeft}></div>
+              <div className={styles.topRight}></div>
+              <div className={styles.bottomLeft}></div>
+              <div className={styles.bottomRight}></div>
               <div className="bg-black absolute top-0 left-0 h-full w-full z-[-2]"></div>
               <div className="absolute top-0 left-0 h-full w-full z-[-1] bg-lines-mobile lg:bg-lines bg-no-repeat bg-cover"></div>
-
               <div className="flex flex-col md:px-6 lg:px-10 gap-6 w-full">
                 {/* access rights row */}
                 <div className="flex w-full px-5 md:px-0">
