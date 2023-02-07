@@ -1,8 +1,6 @@
 .topTrapezoid {
-  width: 210px;
-  height: 35px;
+  display: none;
   top: -36px;
-  background-color: rgba(255, 214, 0, 0.4);
   transform: perspective(4px) rotateX(1deg);
   position: absolute;
   border-top: 5px solid #ffd600;
@@ -10,7 +8,17 @@
   border-right: 5px solid #ffd600;
 }
 
+.topTrapezoid:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 214, 0, 0.4);
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .bottomTrapezoid {
+  display: none;
   width: 282px;
   height: 35px;
   bottom: -36px;
@@ -22,14 +30,22 @@
   border-right: 5px solid #00b9e1;
 }
 
-/* top borders */
+/* borders */
 
 .topBorder {
-  width: calc((100% - 218px) / 2);
+  width: 100%;
   height: 4px;
-  top: -3px;
+  top: -2px;
   background-color: #ffd600;
   position: absolute;
+}
+
+.bottomBorder {
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  bottom: -2px;
+  background-color: #00b9e1;
 }
 
 /* boxes */
@@ -54,14 +70,6 @@
 
 /* bottom elements */
 
-.bottomBorder {
-  position: absolute;
-  height: 4px;
-  bottom: -3px;
-  background-color: #00b9e1;
-  width: calc((100% - 305px) / 2);
-}
-
 .bottomRightBox {
   right: -7px;
   bottom: -7px;
@@ -76,12 +84,18 @@
 
 @media screen and (min-width: 576px) {
   .topTrapezoid {
+    display: block;
     width: 250px;
     height: 40px;
-    top: -42px;
+    top: -40px;
+  }
+
+  .topTrapezoid:after {
+    height: 96%;
   }
 
   .bottomTrapezoid {
+    display: block;
     width: 286px;
     height: 40px;
     bottom: -42px;
@@ -99,8 +113,12 @@
 @media screen and (min-width: 768px) {
   .topTrapezoid {
     width: 293px;
-    height: 49px;
+    height: 50px;
     top: -51px;
+  }
+
+  .topTrapezoid:after {
+    height: 97%;
   }
 
   .bottomTrapezoid {

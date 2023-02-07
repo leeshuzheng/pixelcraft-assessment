@@ -19,7 +19,7 @@ const WelcomeModal: React.FC<WelcomeModalProps> = () => {
             <div className={clsx(styles.topRightBox, styles.box)}></div>
             <div className={clsx(styles.topLeftBox, styles.box)}></div>
             <h1
-              className={`flex flex-col text-4xl md:text-[56px] md:leading-[60px] uppercase text-yellow text-center ${alienEncountersFont.variable} font-alien -mt-2`}
+              className={`flex flex-col text-4xl md:text-[56px] md:leading-[60px] uppercase text-yellow text-center ${alienEncountersFont.variable} font-alien sm:-mt-2 pt-7`}
             >
               <span className="text-3xl md:text-[42px]">Welcome</span> To The
               Aarena!
@@ -40,7 +40,7 @@ const WelcomeModal: React.FC<WelcomeModalProps> = () => {
               </aside>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-4 md:gap-[30px] relative w-full pb-[10px] px-4">
+          <div className="flex flex-col items-center gap-4 md:gap-[30px] relative w-full sm:pb-[10px] px-4 pb-7">
             <div className={styles.bottomTrapezoid}></div>
             <div className={clsx("left-0", styles.bottomBorder)}></div>
             <div className={clsx("right-0", styles.bottomBorder)}></div>
