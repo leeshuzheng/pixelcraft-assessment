@@ -35,7 +35,7 @@ const theme = {
     "magenta-gradient-bottom":
       "radial-gradient(50% 2354449.91% at 50% 99.92%, #C82AC2 0%, rgba(200, 42, 194, 0.4) 100%)",
     "gradient-yellow":
-      "linear-gradient(179.98deg, rgba(255, 214, 0, 0.4) 2.93%, rgba(255, 214, 0, 0) 43.91%, rgba(255, 214, 0, 0.024) 65.5%), linear-gradient(180deg, rgba(0, 0, 0, 0.45) 27.8%, rgba(0, 0, 0, 0) 73.65%);",
+      "linear-gradient(180deg, rgba(255, 214, 0, 0.34) 2.93%, rgba(255, 214, 0, 0) 43.91%, rgba(255, 214, 0, 0) 65.5%), linear-gradient(180deg, rgba(0, 0, 0, 0.45) 27.8%, rgba(0, 0, 0, 0) 73.65%);",
     "gradient-cyan":
       "linear-gradient(180deg, rgba(0, 185, 225, 0.5) 17.01%, rgba(0, 185, 225, 0) 96.53%), linear-gradient(180deg, rgba(0, 0, 0, 0.4) 17.01%, rgba(0, 0, 0, 0) 96.53%);",
     "gradient-magenta":
