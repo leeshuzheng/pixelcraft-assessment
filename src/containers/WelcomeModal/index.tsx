@@ -12,14 +12,15 @@ const WelcomeModal: React.FC<WelcomeModalProps> = () => {
       <div className="flex flex-col min-h-full mx-auto items-end justify-center sm:items-center px-6 py-[100px] lg:px-4 w-full z-10 font-pixelar">
         <div className="w-full max-w-[810px]">
           {/* yellow top section */}
-          <div className="flex flex-col items-center gap-5 md:gap-7 mb-11 bg-gradient-yellow w-full relative">
+          <div className="flex flex-col items-center gap-5 md:gap-5 mb-11 bg-gradient-yellow w-full relative">
+            {""}
             <div className={styles.topTrapezoid}></div>
             <div className={clsx("left-0", styles.topBorder)}></div>
             <div className={clsx("right-0", styles.topBorder)}></div>
             <div className={clsx(styles.topRightBox, styles.box)}></div>
             <div className={clsx(styles.topLeftBox, styles.box)}></div>
             <h1
-              className={`flex flex-col text-4xl md:text-[56px] md:leading-[60px] uppercase text-yellow text-center ${alienEncountersFont.variable} font-alien sm:-mt-2 pt-7`}
+              className={`flex flex-col text-4xl md:text-[56px] md:leading-[70px] uppercase text-yellow text-center ${alienEncountersFont.variable} font-alien sm:-mt-2 pt-7`}
             >
               <span className="text-3xl md:text-[42px]">Welcome</span> To The
               Aarena!
@@ -30,7 +31,7 @@ const WelcomeModal: React.FC<WelcomeModalProps> = () => {
             <div className="flex flex-col items-center sm:flex-row align-center gap-4 px-8 md:gap-5">
               <Image src={GotchiEth} alt="Gotchi ETH" />
               <aside className="flex flex-col">
-                <h2 className="text-3xl md:text-[42px] text-center sm:text-left md:leading-10 uppercase">
+                <h2 className="text-3xl md:text-[42px] text-center sm:text-left md:leading-none uppercase">
                   There are <span className="text-yellow">17</span> Gotchis
                   ahead of you
                 </h2>
@@ -57,16 +58,16 @@ const WelcomeModal: React.FC<WelcomeModalProps> = () => {
               To EXIT the Aarena with your winnings you must:
             </span>
             <ul className="text-xl md:text-[28px]">
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-4">
                 <span className="bg-white h-[6px] w-[6px] relative top-[2px]"></span>
                 Defeat at least 1 gotchi
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-4">
                 <span className="bg-white h-[6px] w-[6px] relative top-[2px]"></span>
                 Survive for at least 3 minutes
               </li>
             </ul>
-            <h5 className="uppercase text-yellow text-xl leading-tight md:text-[28px] md:leading-[26px] max-w-[340px] md:max-w-[430px] text-center md:mt-5">
+            <h5 className="uppercase text-yellow text-xl leading-tight md:text-[28px] md:leading-[26px] max-w-[340px] md:max-w-[430px] text-center md:mt-4">
               Exiting without meeting these criteria will forfeit all your
               winnings!
             </h5>

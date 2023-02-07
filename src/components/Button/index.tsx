@@ -10,7 +10,7 @@ const Button = ({ children, variant }: ButtonProps) => {
         "relative text-white text-3xl xl:text-[40px] h-[50px] md:h-[64px] md:max-w-[304px] w-full",
         bgStyle[variant]
       )}
-      onClick={() => alert("testing click!")}
+      onClick={() => alert("Click!")}
     >
       {/* top outside */}
       <span
