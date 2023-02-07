@@ -10,6 +10,7 @@ I had no business passing props to components, but gave each container component
 
 - At times it was neccessary to make slight deviations from the figma, as certain font sizes would be too big for buttons in smaller flex containers between 1024px and 1280px browser widths. However I ensured these were minimal.
 - It was a challenge to handle trapezoids and polygons as container shapes. I would have wanted to experiment with using [`border-image-source`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-source) to create borders that were identical to those within the figma design.
+- While using `filter: drop-shadow()` to handle elements styled with `clip-path: ...` as a hacky workaround for adding the magenta glow around the Parcel modal, I had to lose its translucent background color. Using `border-image-source` or perhaps using the svg as a background image.
 
 ## Getting Started
 
