@@ -27,6 +27,7 @@ const theme = {
   },
   backgroundImage: {
     "parcel-dashboard": "url('/assets/images/parcel-dashboard-bg.png')",
+    "parcel-modal": "url('/assets/images/parcel-modal-bg.svg')",
     "welcome-queue": "url('/assets/images/welcome-bg.png')",
     lines: "url('/assets/images/Lines.svg')",
     "lines-mobile": "url('/assets/images/Lines-mobile.png')",

@@ -17,8 +17,8 @@ const ParcelModal: React.FC<ParcelModalProps> = () => {
     <div className="fixed inset-0 z-10 overflow-y-auto">
       <div
         className={clsx(
-          "flex min-h-full mx-auto items-end justify-center sm:items-center px-6 lg:px-4 py-[100px] max-w-[1240px] w-full",
-          styles.parent
+          "flex min-h-full mx-auto items-end justify-center sm:items-center px-6 lg:px-4 py-[100px] max-w-[1240px] w-full"
+          // styles.parent
         )}
       >
         <div className="relative w-full">
@@ -36,13 +36,13 @@ const ParcelModal: React.FC<ParcelModalProps> = () => {
           </div>
           <div
             className={clsx(
-              "font-pixelar w-full cut-out top-left border-[3px] border-magenta rounded-[3px]",
-              styles.customShape
+              "font-pixelar w-full bg-parcel-modal bg-contain bg-no-repeat"
+              // styles.customShape
             )}
           >
             <div className="flex flex-col items-center relative w-full h-full pt-10 lg:pt-8 pb-[66px]">
-              <div className="bg-black absolute top-0 left-0 h-full w-full z-[-2]"></div>
-              <div className="absolute top-0 left-0 h-full w-full z-[-1] bg-lines-mobile lg:bg-lines bg-no-repeat bg-cover"></div>
+              {/* <div className="bg-black absolute top-0 left-0 h-full w-full z-[-2]"></div> */}
+              {/* <div className="absolute top-0 left-0 h-full w-full z-[-1] bg-lines-mobile lg:bg-lines bg-no-repeat bg-cover"></div> */}
 
               <div className="flex flex-col md:px-6 lg:px-10 gap-6 w-full">
                 {/* access rights row */}
