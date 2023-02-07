@@ -94,7 +94,9 @@ const ParcelModal: React.FC<ParcelModalProps> = () => {
                             Collected
                           </h4>
                           <ul className="flex flex-col gap-7 pb-[14px] relative bg-gradient-magenta pl-2 pr-4">
-                            <div className="absolute bottom-0 left-0 w-full bg-gradient-magenta h-[2px]"></div>
+                            <li className="absolute w-full bottom-0 left-0">
+                              <div className="bg-magenta-gradient-bottom h-[2px]"></div>
+                            </li>
                             <li className="flex gap-2 items-center">
                               <Image src={ParcelIcons.KekIcon} alt="kek" />
                               <span className="md:text-[32px] md:leading-[30px] text-2xl">
@@ -126,6 +128,9 @@ const ParcelModal: React.FC<ParcelModalProps> = () => {
                             Remaining
                           </h4>{" "}
                           <ul className="flex flex-col gap-7 pb-[14px] relative bg-gradient-grey pl-2 pr-4">
+                            <li className="absolute w-full bottom-0 left-0">
+                              <div className="bg-grey-gradient-bottom h-[2px]"></div>
+                            </li>
                             <li className="flex gap-2 items-center">
                               <Image src={ParcelIcons.KekIcon} alt="kek" />
                               <span className="md:text-[32px] md:leading-[30px] text-2xl">
@@ -161,7 +166,10 @@ const ParcelModal: React.FC<ParcelModalProps> = () => {
                       <h4 className="uppercase text-3xl md:text-[40px] md:leading-[37px] text-center mb-3">
                         Stats
                       </h4>
-                      <ul className="flex flex-row justify-around bg-gradient-magenta w-full pt-4 px-[10px] pb-[10px] mb-4">
+                      <ul className="relative flex flex-row justify-around bg-gradient-magenta w-full pt-4 px-[10px] pb-[10px] mb-4">
+                        <li className="absolute w-full bottom-0 left-0">
+                          <div className="bg-magenta-gradient-bottom h-[2px]"></div>
+                        </li>
                         <li>
                           <Image src={ParcelIcons.KekIcon} alt="kek" />
                         </li>

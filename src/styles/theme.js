@@ -30,6 +30,10 @@ const theme = {
     "welcome-queue": "url('/assets/images/welcome-bg.png')",
     lines: "url('/assets/images/Lines.svg')",
     "lines-mobile": "url('/assets/images/Lines-mobile.png')",
+    "grey-gradient-bottom":
+      "radial-gradient(50% 2354449.91% at 50% 99.92%, #FFFFFF 0%, rgba(185, 185, 185, 0.4) 100%);",
+    "magenta-gradient-bottom":
+      "radial-gradient(50% 2354449.91% at 50% 99.92%, #C82AC2 0%, rgba(200, 42, 194, 0.4) 100%)",
     "gradient-yellow":
       "linear-gradient(179.98deg, rgba(255, 214, 0, 0.4) 2.93%, rgba(255, 214, 0, 0) 43.91%, rgba(255, 214, 0, 0.024) 65.5%), linear-gradient(180deg, rgba(0, 0, 0, 0.45) 27.8%, rgba(0, 0, 0, 0) 73.65%);",
     "gradient-cyan":
